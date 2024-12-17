@@ -1,0 +1,174 @@
+.grid-item {
+  /* Position */
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  font-size: 1em;
+  container-type: inline-size;
+
+  /* Appearance */
+  border-radius: 1.5em;
+  border: 5px solid indigo;
+
+  /* Children */
+  overflow: hidden;
+
+  &:hover {
+    --shadow-color: Fuchsia;
+    box-shadow:
+      0 0 5px black,
+      0 0 5px var(--shadow-color),
+      0 0 10px var(--shadow-color),
+      0 0 15px var(--shadow-color),
+      0 0 30px var(--shadow-color),
+      0 0 50px var(--shadow-color);
+    border-color: yellow;
+  }
+}
+
+.grid-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  --shadow-color: indigo;
+  --shadow-color-2: purple;
+  --text-shadow: 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color),
+    0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color),
+    0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color),
+    0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color),
+    0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 20px var(--shadow-color-2),
+    0 0 20px var(--shadow-color-2), 0 0 20px var(--shadow-color-2);
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .top-left {
+    /* Position */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* Appearance */
+    font-size: 10cqw;
+
+    .number {
+      &.el-front {
+        color: LightSkyBlue;
+      }
+
+      &.el-back {
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+
+  .top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    button {
+      /* Position */
+      margin: 0.2em;
+      float: right;
+      --size: 16cqw;
+      width: var(--size);
+      height: var(--size);
+      position: relative;
+
+      /* Appearance */
+      background-color: gold;
+      border-color: indigo;
+      cursor: pointer;
+
+      svg {
+        color: rgb(47, 0, 80);
+        position: absolute;
+        --size: 90%;
+        width: var(--size);
+        height: var(--size);
+        left: 5%;
+        top: 5%;
+      }
+
+      &:hover {
+        border-color: yellow;
+        box-shadow:
+          0 0 10px yellow,
+          0 0 40px yellow;
+      }
+    }
+  }
+
+  .bottom-left {
+    /* Position */
+    position: absolute;
+    bottom: 0;
+    left: 0.3em;
+
+    /* Appearance */
+    font-size: 9cqw;
+
+    &.caption {
+      margin-left: 0.3em;
+      .el-back {
+        text-shadow: var(--text-shadow);
+      }
+    }
+
+    .title {
+      color: gold;
+      font-weight: bold;
+      line-height: 1em;
+    }
+
+    .subtitle {
+      color: pink;
+    }
+
+    .type {
+      font-weight: initial;
+      font-size: 80%;
+    }
+  }
+
+  .bottom-right {
+    /* Position */
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.2em;
+
+    /* Appearance */
+    font-size: 10cqw;
+
+    > * {
+      float: right;
+    }
+
+    .price {
+      &.el-front {
+        color: LightSkyBlue;
+      }
+
+      &.el-back {
+        text-shadow: var(--text-shadow);
+      }
+    }
+
+    .sold-out {
+      font-style: italic;
+
+      &.el-front {
+        color: orange;
+      }
+
+      &.el-back {
+        text-shadow: var(--text-shadow);
+      }
+    }
+  }
+}

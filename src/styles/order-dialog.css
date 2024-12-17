@@ -1,0 +1,36 @@
+.order-dialog {
+  width: 300px;
+  font-size: 1.2em;
+
+  .order-dialog-body {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 1em;
+    max-width: 100%;
+  }
+
+  .links {
+    /* Position */
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 0.5em;
+
+    /* Appearance */
+    font-weight: bold;
+
+    .button {
+      border: 4px solid black;
+      width: 8em;
+
+      &:hover {
+        box-shadow:
+          0 0 10px purple,
+          0 0 40px purple;
+        border: 4px solid yellow;
+      }
+    }
+  }
+}

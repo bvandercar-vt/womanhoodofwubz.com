@@ -1,0 +1,99 @@
+@import 'double-element.css';
+@import 'header.css';
+@import 'grid.css';
+@import 'grid-image.css';
+@import 'modal.css';
+@import 'order-dialog.css';
+@import 'sc-player.css';
+
+/* General */
+
+:root {
+  /* Colors */
+  --soundcloud: rgb(242, 111, 35);
+  --twitter: rgb(29, 161, 242);
+  --instagram: rgb(193, 53, 132);
+  --reddit: rgb(255, 86, 0);
+  --facebook: rgb(66, 103, 178);
+}
+
+body {
+  background-image: url('/public/background.png');
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: 80em;
+  color: black;
+  font-family: tahoma, sans-serif;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  cursor: alias;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+button,
+.button {
+  border-radius: 0.5em;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  max-height: 0px;
+}
+
+.display-none {
+  display: none;
+}
+
+.soundcloud {
+  background-color: var(--soundcloud);
+}
+
+.instagram {
+  background-color: var(--instagram);
+}
+
+.email {
+  background-color: DeepSkyBlue;
+}
+
+#main-body {
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+}
