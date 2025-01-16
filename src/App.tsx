@@ -7,7 +7,7 @@ import './api/soundcloudWidget'
 
 import * as contentful from 'contentful'
 import { isString } from 'lodash'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Grid } from './components/Grid'
 import { GridImage } from './components/GridImage'
 import { Header } from './components/Header'
@@ -23,10 +23,10 @@ type Product = contentful.EntrySkeletonType<{
   type?: contentful.EntryFieldTypes.Text
 }>
 
+const GRID_ID = 'main-grid'
+
 export const App = () => {
   const [data, setData] = useState<ContentfulResponse>()
-
-  const gridRef = useRef<HTMLDivElement>(null)
 
   const contentfulClient = contentful.createClient({
     space: 'pjsrst0mmdyo',
@@ -49,14 +49,18 @@ export const App = () => {
 
   return (
     <>
-      <Header scrollToGrid={() => gridRef.current?.scrollIntoView({ behavior: 'smooth' })} />
+      <Header
+        scrollToGrid={() =>
+          document.getElementById(GRID_ID)?.scrollIntoView({ behavior: 'smooth' })
+        }
+      />
       <div id="main-body">
         <SoundcloudPlayer
           href="https://soundcloud.com/marisa-kerstanski/sets/womanhood-of-wubz-vol-3"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1922773207&color=%23ff00d0&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
           title="Womanhood Of Wubz - Volume 3"
         />
-        <Grid gridRef={gridRef}>
+        <Grid id={GRID_ID}>
           {data &&
             data.items.map((item) => {
               const { image, title, subtitle, number, type, price, soldOut } = item.fields
