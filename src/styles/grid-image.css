@@ -90,10 +90,11 @@
 
 .grid-image .bottom-left .circle {
   background-color: slateblue;
-  /* Potition (Centered) */
+  /* Position (Centered) */
   --circle-size: 2.5em;
   height: var(--circle-size);
   width: var(--circle-size);
+  line-height: var(--circle-size);
   float: left;
 
   /* Appearance */
