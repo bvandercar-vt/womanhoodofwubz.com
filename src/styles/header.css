@@ -214,9 +214,7 @@ header {
   #header-right {
     /* Position */
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.8em;
+    margin: 0.8em auto;
     right: auto;
     line-height: 1em;
 
