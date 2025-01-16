@@ -5,11 +5,16 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import type { HTMLAttributes } from 'react'
 import { copyEmail, INSTAGRAM_USERNAME } from '../contants'
 import { CircleLink } from './CircleLink'
 import { DoubleText } from './DoubleText'
 
-export const Header = () => {
+export const Header = ({
+  scrollToGrid,
+}: {
+  scrollToGrid: HTMLAttributes<HTMLAnchorElement>['onClick']
+}) => {
   return (
     <header>
       <div id="header-center">
@@ -25,12 +30,7 @@ export const Header = () => {
         </div>
         <div id="buttons">
           <DoubleText>
-            <a
-              className="button"
-              id="designed"
-              tabIndex={0}
-              onClick={() => alert('TODO: scroll to grid!')}
-            >
+            <a className="button" id="designed" tabIndex={0} onClick={scrollToGrid}>
               Designed Hats <FontAwesomeIcon icon={faCircleArrowDown} />
             </a>
           </DoubleText>
