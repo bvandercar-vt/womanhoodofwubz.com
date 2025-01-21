@@ -1,8 +1,8 @@
-.double-text-container {
+.double-element-container {
   position: relative;
   display: inline-block;
 
-  .text-back {
+  .el-back {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
     color: transparent;
   }
 
-  .text-front {
+  .el-front {
     position: relative;
     z-index: 2;
   }

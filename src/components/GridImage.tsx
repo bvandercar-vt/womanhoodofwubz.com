@@ -4,7 +4,7 @@ import type { ReactNode } from 'react'
 import { useId, useState } from 'react'
 import { copyEmail, INSTAGRAM_USERNAME } from '../contants'
 import { CircleLink } from './CircleLink'
-import { DoubleText } from './DoubleText'
+import { DoubleElement } from './DoubleElement'
 
 export const GridImage = ({
   src,
@@ -34,7 +34,7 @@ export const GridImage = ({
       <img src={src} aria-labelledby={titleId} />
       <div className="upper-right">
         {soldOut ? (
-          <DoubleText className="sold-out">Sold!</DoubleText>
+          <DoubleElement className="sold-out">Sold!</DoubleElement>
         ) : (
           isHovered && (
             <div className="links" role="group" aria-label="send links">
@@ -54,17 +54,17 @@ export const GridImage = ({
           <span className="number-content">{number}</span>
         </div>
         <div className="caption">
-          <DoubleText>
+          <DoubleElement>
             {title && (
               <p className="title" id={titleId}>
                 {title}
               </p>
             )}
             {subtitle && <p className="subtitle">{subtitle}</p>}
-          </DoubleText>
+          </DoubleElement>
         </div>
       </div>
-      <div className="bottom-right price">{price && <DoubleText>${price}</DoubleText>}</div>
+      <div className="bottom-right price">{price && <DoubleElement>${price}</DoubleElement>}</div>
     </div>
   )
 }

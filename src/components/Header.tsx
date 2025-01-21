@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { HTMLAttributes } from 'react'
 import { copyEmail, INSTAGRAM_USERNAME } from '../contants'
 import { CircleLink } from './CircleLink'
-import { DoubleText } from './DoubleText'
+import { DoubleElement } from './DoubleElement'
 
 export const Header = ({
   scrollToGrid,
@@ -20,21 +20,21 @@ export const Header = ({
       <div id="header-center">
         <img src="/Logo.png" alt="Womanhood of Wubz" id="header-logo-img" />
         <div id="bio">
-          <DoubleText>
+          <DoubleElement>
             <p>📍 Denver, CO 📍</p>
             <p>
               ✨ Bringing you the accessories that celebrate the magic of good music and the power
               of connection ✨
             </p>
-          </DoubleText>
+          </DoubleElement>
         </div>
         <div id="buttons">
-          <DoubleText>
+          <DoubleElement>
             <a className="button" id="designed" tabIndex={0} onClick={scrollToGrid}>
               Designed Hats <FontAwesomeIcon icon={faCircleArrowDown} />
             </a>
-          </DoubleText>
-          <DoubleText>
+          </DoubleElement>
+          <DoubleElement>
             <a
               className="button"
               id="custom"
@@ -43,13 +43,13 @@ export const Header = ({
             >
               Custom Hats <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>
-          </DoubleText>
+          </DoubleElement>
         </div>
       </div>
       <div id="header-right">
         <div id="social-links-wrapper" role="region" aria-label="links and social media">
           <span id="connect">
-            <DoubleText>Connect with us!</DoubleText>
+            <DoubleElement>Connect with us!</DoubleElement>
           </span>
           <div id="social-links">
             <CircleLink

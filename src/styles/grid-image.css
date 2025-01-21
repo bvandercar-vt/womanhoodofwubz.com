@@ -140,9 +140,9 @@
   }
 }
 
-.grid-image .bottom-left .caption .text-back,
-.grid-image .bottom-right.price .text-back,
-.grid-image .upper-right .sold-out .text-back {
+.grid-image .bottom-left .caption .el-back,
+.grid-image .bottom-right.price .el-back,
+.grid-image .upper-right .sold-out .el-back {
   --shadow-color: indigo;
   --shadow-color-2: purple;
   text-shadow:

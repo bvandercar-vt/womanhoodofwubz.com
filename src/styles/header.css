@@ -40,7 +40,7 @@ header {
   width: 9em;
 }
 
-#buttons .text-back {
+#buttons .el-back {
   --shadow-color: rgb(47, 0, 80);
   box-shadow:
     0 0 5px black,
@@ -95,7 +95,7 @@ header {
   font-style: italic;
 }
 
-#header-right #connect .text-back {
+#header-right #connect .el-back {
   --shadow-size-1: 0.8em;
   --shadow-color-1: rgb(47, 0, 80);
   --shadow-size-2: 1em;
@@ -181,11 +181,11 @@ header {
     }
   }
 
-  .text-front {
+  .el-front {
     color: lime;
   }
 
-  .text-back {
+  .el-back {
     --shadow-size-1: 0.8em;
     --shadow-color-1: rgb(47, 0, 80);
     --shadow-size-2: 1em;
