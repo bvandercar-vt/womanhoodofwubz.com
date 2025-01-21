@@ -174,44 +174,44 @@ header {
   color: lime;
   font-family: 'Outfit', sans-serif;
   font-size: 1.2em;
-}
 
-#bio p {
-  &:not(:last-child) {
-    margin-bottom: 0.2em;
+  p {
+    &:not(:last-child) {
+      margin-bottom: 0.2em;
+    }
   }
-}
 
-#bio .text-front {
-  color: lime;
-}
+  .text-front {
+    color: lime;
+  }
 
-#bio .text-back {
-  --shadow-size-1: 0.8em;
-  --shadow-color-1: rgb(47, 0, 80);
-  --shadow-size-2: 1em;
-  --shadow-color-2: black;
-  text-shadow:
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2);
+  .text-back {
+    --shadow-size-1: 0.8em;
+    --shadow-color-1: rgb(47, 0, 80);
+    --shadow-size-2: 1em;
+    --shadow-color-2: black;
+    text-shadow:
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-1) var(--shadow-color-1),
+      0 0 var(--shadow-size-2) var(--shadow-color-2),
+      0 0 var(--shadow-size-2) var(--shadow-color-2),
+      0 0 var(--shadow-size-2) var(--shadow-color-2),
+      0 0 var(--shadow-size-2) var(--shadow-color-2),
+      0 0 var(--shadow-size-2) var(--shadow-color-2);
+  }
 }
 
 @media (max-width: 1500px) {
@@ -224,20 +224,20 @@ header {
 
     /* Appearance */
     text-align: center;
-  }
 
-  #header-right #connect {
-    /* Position */
-    position: absolute;
-    left: 50%;
-    max-width: 4em;
-    text-align: right;
-    margin: 0;
+    #connect {
+      /* Position */
+      position: absolute;
+      left: 50%;
+      max-width: 4em;
+      text-align: right;
+      margin: 0;
 
-    /* Appearance */
-    color: Aquamarine;
-    font-style: italic;
-    transform: translateX(-10.1em) translateY(0.75em);
+      /* Appearance */
+      color: Aquamarine;
+      font-style: italic;
+      transform: translateX(-10.1em) translateY(0.75em);
+    }
   }
 
   #header-logo-img {

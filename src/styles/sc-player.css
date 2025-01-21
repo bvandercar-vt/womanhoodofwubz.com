@@ -1,12 +1,3 @@
-.sc-iframe-wrapper iframe {
-  /* Position */
-  position: relative;
-  top: -5px; /* Hide top of iframe */
-
-  /* Appearance */
-  filter: invert(100%) hue-rotate(180deg);
-}
-
 .sc-iframe-wrapper {
   /* Position */
   width: 100%;
@@ -15,6 +6,15 @@
 
   /* Appearance */
   border-radius: 0 20px 20px 20px;
+
+  iframe {
+    /* Position */
+    position: relative;
+    top: -5px; /* Hide top of iframe */
+
+    /* Appearance */
+    filter: invert(100%) hue-rotate(180deg);
+  }
 }
 
 .sc-title {
@@ -30,17 +30,17 @@
   font-weight: bold;
 }
 
-.sc-player:hover .sc-title {
-  --shadow-color: blue;
-  text-shadow:
-    0 0 5px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 15px var(--shadow-color);
-}
-
 .sc-player {
   margin-bottom: 0.6em;
   margin-top: -0.3em;
+
+  &:hover .sc-title {
+    --shadow-color: blue;
+    text-shadow:
+      0 0 5px var(--shadow-color),
+      0 0 10px var(--shadow-color),
+      0 0 15px var(--shadow-color);
+  }
 }
 
 @media (max-width: 1500px) {

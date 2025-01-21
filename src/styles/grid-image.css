@@ -9,18 +9,18 @@
 
   /* Children */
   overflow: hidden;
-}
 
-.grid-item:hover {
-  --shadow-color: Fuchsia;
-  box-shadow:
-    0 0 5px black,
-    0 0 5px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 15px var(--shadow-color),
-    0 0 30px var(--shadow-color),
-    0 0 50px var(--shadow-color);
-  border-color: yellow;
+  &:hover {
+    --shadow-color: Fuchsia;
+    box-shadow:
+      0 0 5px black,
+      0 0 5px var(--shadow-color),
+      0 0 10px var(--shadow-color),
+      0 0 15px var(--shadow-color),
+      0 0 30px var(--shadow-color),
+      0 0 50px var(--shadow-color);
+    border-color: yellow;
+  }
 }
 
 .grid-image {
@@ -29,89 +29,115 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
 
-.grid-image img {
-  max-width: 100%;
-  max-height: 100%;
-}
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-.grid-image .upper-right {
-  position: absolute;
-  right: 0.5em;
-  top: 0.5em;
-}
+  .upper-right {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
 
-.grid-image .upper-right .links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-}
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
 
-.grid-image .upper-right .links .circle {
-  /* Position (Centered) */
-  --circle-size: 1.5em;
-  height: var(--circle-size);
-  width: var(--circle-size);
-  line-height: var(--circle-size);
-  text-align: center;
+      .circle {
+        /* Position (Centered) */
+        --circle-size: 1.5em;
+        height: var(--circle-size);
+        width: var(--circle-size);
+        line-height: var(--circle-size);
+        text-align: center;
 
-  /* Appearance */
-  font-size: 1.5em;
-  border: 4px solid black;
-  transition: 0.1s;
-  opacity: 0.85;
-}
+        /* Appearance */
+        font-size: 1.5em;
+        border: 4px solid black;
+        transition: 0.1s;
+        opacity: 0.85;
 
-.grid-image .upper-right .links .circle:hover {
-  font-size: 1.6em;
-  box-shadow:
-    0 0 10px yellow,
-    0 0 40px yellow;
-}
+        &:hover {
+          font-size: 1.6em;
+          box-shadow:
+            0 0 10px yellow,
+            0 0 40px yellow;
+        }
+      }
+    }
 
-.grid-item .upper-right .sold-out {
-  color: orangered;
-  font-weight: bold;
-  font-size: 1.8em;
-  margin-bottom: 0.3em;
-}
+    .sold-out {
+      color: orangered;
+      font-weight: bold;
+      font-size: 1.8em;
+      margin-bottom: 0.3em;
+    }
+  }
 
-.grid-image .bottom-left {
-  position: absolute;
-  bottom: 0.5em;
-  left: 0.5em;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
+  .bottom-left {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 
-.grid-image .bottom-left .circle {
-  background-color: slateblue;
-  /* Position (Centered) */
-  --circle-size: 2.5em;
-  height: var(--circle-size);
-  width: var(--circle-size);
-  line-height: var(--circle-size);
-  float: left;
+    .circle {
+      background-color: slateblue;
+      /* Position (Centered) */
+      --circle-size: 2.5em;
+      height: var(--circle-size);
+      width: var(--circle-size);
+      line-height: var(--circle-size);
+      float: left;
 
-  /* Appearance */
-  border: 5px solid indigo;
-  box-shadow: 0 0 5px black;
-}
+      /* Appearance */
+      border: 5px solid indigo;
+      box-shadow: 0 0 5px black;
+    }
 
-.grid-image .bottom-left .number-content {
-  font-size: 1.8em;
-  color: yellow;
-}
+    .number-content {
+      font-size: 1.8em;
+      color: yellow;
+    }
 
-.grid-image .bottom-left .caption {
-  margin-left: 0.3em;
-  margin-bottom: 0.3em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+    .caption {
+      margin-left: 0.3em;
+      margin-bottom: 0.3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .title {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: pink;
+    }
+
+    .type {
+      font-weight: initial;
+      font-size: small;
+    }
+  }
+
+  .bottom-right {
+    position: absolute;
+    right: 0.6em;
+    bottom: 0.5em;
+
+    &.price {
+      color: cyan;
+      font-size: 1em;
+      margin-bottom: 0.3em;
+    }
+  }
 }
 
 .grid-image .bottom-left .caption .text-back,
@@ -136,30 +162,4 @@
     0 0 20px var(--shadow-color-2),
     0 0 20px var(--shadow-color-2),
     0 0 20px var(--shadow-color-2);
-}
-
-.grid-image .bottom-left .title {
-  color: yellow;
-  font-weight: bold;
-}
-
-.grid-image .bottom-left .subtitle {
-  color: pink;
-}
-
-.grid-image .bottom-left .type {
-  font-weight: initial;
-  font-size: small;
-}
-
-.grid-image .bottom-right {
-  position: absolute;
-  right: 0.6em;
-  bottom: 0.5em;
-}
-
-.grid-item .bottom-right.price {
-  color: cyan;
-  font-size: 1em;
-  margin-bottom: 0.3em;
 }
