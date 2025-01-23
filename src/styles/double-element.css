@@ -7,6 +7,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transform: translate3d(0, 0, 0);
 
     color: transparent;
   }
@@ -14,10 +15,5 @@
   .el-front {
     position: relative;
     z-index: 2;
-  }
-
-  .el-back,
-  .el-front {
-    transform: translate3d(0, 0, 0);
   }
 }
