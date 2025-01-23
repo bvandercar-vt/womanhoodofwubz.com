@@ -26,45 +26,48 @@ header {
   align-items: center;
   text-align: center;
   gap: 10px;
-  padding-top: 0.7em;
-}
+  padding-top: 0.1em;
 
-#buttons .button {
-  background-color: black;
-  border-radius: 0.5em;
-  border-width: 2px;
-  border-style: solid;
-  padding: 0.5em;
-  width: 9em;
-}
+  .button {
+    border-radius: 0.5em;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em;
+    width: 8em;
 
-#buttons .el-back {
-  --shadow-color: rgb(47, 0, 80);
-  box-shadow:
-    0 0 5px black,
-    0 0 5px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 10px var(--shadow-color),
-    0 0 15px var(--shadow-color),
-    0 0 30px var(--shadow-color),
-    0 0 50px var(--shadow-color);
-}
+    &.el-front {
+      background-color: black;
 
-#buttons .button:hover {
-  box-shadow: 0 0 40px yellow;
-  border-color: yellow !important;
-}
+      &:hover {
+        border-color: yellow !important;
+        box-shadow: 0 0 40px yellow;
+      }
 
-#buttons .button#designed {
-  border-color: cyan;
-  color: cyan;
-}
+      &#designed {
+        border-color: cyan;
+        color: cyan;
+      }
 
-#buttons .button#custom {
-  border-color: orange;
-  color: orange;
+      &#custom {
+        border-color: orange;
+        color: orange;
+      }
+    }
+
+    &.el-back {
+      --shadow-color: rgb(47, 0, 80);
+      box-shadow:
+        0 0 5px black,
+        0 0 5px var(--shadow-color),
+        0 0 10px var(--shadow-color),
+        0 0 10px var(--shadow-color),
+        0 0 10px var(--shadow-color),
+        0 0 10px var(--shadow-color),
+        0 0 15px var(--shadow-color),
+        0 0 30px var(--shadow-color),
+        0 0 50px var(--shadow-color);
+    }
+  }
 }
 
 #header-right {
@@ -75,50 +78,50 @@ header {
 
   /* Appearance */
   text-align: right;
-}
 
-#header-right span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#header-right #connect {
-  /* Position */
-  display: inline-block;
-  margin-bottom: 0.3em;
+  #connect {
+    /* Position */
+    display: inline-block;
+    margin-bottom: 0.3em;
 
-  /* Appearance */
-  color: Aquamarine;
-  font-style: italic;
-}
+    /* Appearance */
+    color: Aquamarine;
+    font-style: italic;
 
-#header-right #connect .el-back {
-  --shadow-size-1: 0.8em;
-  --shadow-color-1: rgb(47, 0, 80);
-  --shadow-size-2: 1em;
-  --shadow-color-2: black;
-  text-shadow:
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-1) var(--shadow-color-1),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2),
-    0 0 var(--shadow-size-2) var(--shadow-color-2);
+    .el-back {
+      --shadow-size-1: 0.8em;
+      --shadow-color-1: rgb(47, 0, 80);
+      --shadow-size-2: 1em;
+      --shadow-color-2: black;
+      text-shadow:
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-1) var(--shadow-color-1),
+        0 0 var(--shadow-size-2) var(--shadow-color-2),
+        0 0 var(--shadow-size-2) var(--shadow-color-2),
+        0 0 var(--shadow-size-2) var(--shadow-color-2),
+        0 0 var(--shadow-size-2) var(--shadow-color-2),
+        0 0 var(--shadow-size-2) var(--shadow-color-2);
+    }
+  }
 }
 
 #social-links-wrapper {
@@ -132,30 +135,30 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2px;
-}
 
-#social-links .circle {
-  /* Potition (Centered) */
-  --circle-size: 3em;
-  height: var(--circle-size);
-  width: var(--circle-size);
+  .circle {
+    /* Potition (Centered) */
+    --circle-size: 3em;
+    height: var(--circle-size);
+    width: var(--circle-size);
 
-  /* Appearance */
-  border: 5px solid black;
-  box-shadow: 0 0 30px black;
-  transition: 0.1s;
-}
+    /* Appearance */
+    border: 5px solid black;
+    box-shadow: 0 0 30px black;
+    transition: 0.1s;
 
-#social-links .circle svg {
-  font-size: 2em;
-}
+    svg {
+      font-size: 2em;
+    }
 
-#social-links .circle:hover {
-  box-shadow: 0 0 40px yellow;
-}
+    &:hover {
+      box-shadow: 0 0 40px yellow;
 
-#social-links .circle:hover svg {
-  font-size: 2.2em;
+      svg {
+        font-size: 2.2em;
+      }
+    }
+  }
 }
 
 #bio {
@@ -218,7 +221,7 @@ header {
   #header-right {
     /* Position */
     position: relative;
-    margin: 0.8em auto;
+    margin: 0.7em auto;
     right: auto;
     line-height: 1em;
 

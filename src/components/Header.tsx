@@ -29,21 +29,16 @@ export const Header = ({
           </DoubleElement>
         </div>
         <div id="buttons">
-          <DoubleElement>
-            <a className="button" id="designed" tabIndex={0} onClick={scrollToGrid}>
+          <a tabIndex={0} onClick={scrollToGrid}>
+            <DoubleElement className="button" id="designed">
               Designed Hats <FontAwesomeIcon icon={faCircleArrowDown} />
-            </a>
-          </DoubleElement>
-          <DoubleElement>
-            <a
-              className="button"
-              id="custom"
-              tabIndex={0}
-              onClick={() => alert('Page coming soon!')}
-            >
+            </DoubleElement>
+          </a>
+          <a tabIndex={0} onClick={() => alert('Page coming soon!')}>
+            <DoubleElement className="button" id="custom">
               Custom Hats <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </a>
-          </DoubleElement>
+            </DoubleElement>
+          </a>
         </div>
       </div>
       <div id="header-right">

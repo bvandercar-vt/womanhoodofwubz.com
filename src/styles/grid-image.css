@@ -79,12 +79,15 @@
     }
 
     .sold-out {
-      color: orangered;
       font-weight: bold;
       font-size: 1.8em;
       margin-bottom: 0.3em;
 
-      .el-back {
+      &.el-front {
+        color: orangered;
+      }
+
+      &.el-back {
         text-shadow: var(--text-shadow);
       }
     }

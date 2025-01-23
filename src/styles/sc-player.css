@@ -32,7 +32,7 @@
 
 .sc-player {
   margin-bottom: 0.6em;
-  margin-top: -0.3em;
+  margin-top: -0.7em;
 
   &:hover .sc-title {
     --shadow-color: blue;
@@ -45,6 +45,6 @@
 
 @media (max-width: 1500px) {
   .sc-player {
-    margin-top: -0.5em;
+    margin-top: -0.4em;
   }
 }
