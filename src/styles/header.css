@@ -16,10 +16,8 @@ header {
   margin-bottom: -8px;
 
   /* Appearance - Glow */
-  --header-title-img-glow: drop-shadow(0 0 30px rgb(47, 0, 80)) drop-shadow(0 0 50px black)
+  filter: drop-shadow(0 0 30px rgb(47, 0, 80)) drop-shadow(0 0 50px black)
     drop-shadow(0 0 30px black);
-  -webkit-filter: var(--header-title-img-glow);
-  filter: var(--header-title-img-glow);
 }
 
 #buttons {
