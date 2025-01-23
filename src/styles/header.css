@@ -180,8 +180,9 @@ header {
   }
 
   .el-front {
-    color: lime;
-    -webkit-text-fill-color: lime;
+    --bio-color: lime !important;
+    color: var(--bio-color);
+    -webkit-text-fill-color: var(--bio-color);
   }
 
   .el-back {
