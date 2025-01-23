@@ -5,7 +5,7 @@
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
-    transform: translate3d(0, 0, 0px);
+    /* transform: translate3d(0, 0, 0px); */
 
     color: transparent;
     border-color: transparent;
@@ -16,6 +16,6 @@
     grid-column: 1;
     grid-row: 1;
     z-index: 2;
-    transform: translate3d(0, 0, 1px);
+    /* transform: translate3d(0, 0, 1px); */
   }
 }
