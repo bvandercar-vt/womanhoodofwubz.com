@@ -171,7 +171,8 @@ header {
   margin-bottom: 0.5em;
 
   /* Appearance */
-  color: lime;
+  color: lime !important;
+  -webkit-text-fill-color: lime;
   font-family: 'Outfit', sans-serif;
   font-size: 1.2em;
 
@@ -183,7 +184,8 @@ header {
   }
 
   .el-front {
-    color: lime;
+    color: lime !important;
+    -webkit-text-fill-color: lime;
   }
 
   .el-back {
