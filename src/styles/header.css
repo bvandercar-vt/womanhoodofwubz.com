@@ -172,7 +172,7 @@ header {
   margin-bottom: 0.5em;
 
   /* Appearance */
-  font-family: 'Outfit', sans-serif;
+  /* font-family: 'Outfit', sans-serif; */
   font-size: 1.2em;
 
   /* Space between paragraphs */
@@ -183,9 +183,10 @@ header {
   }
 
   .el-front {
-    --bio-color: lime !important;
+    color: lime;
+    /* --bio-color: lime !important;
     color: var(--bio-color);
-    -webkit-text-fill-color: var(--bio-color);
+    -webkit-text-fill-color: var(--bio-color); */
   }
 
   .el-back {
