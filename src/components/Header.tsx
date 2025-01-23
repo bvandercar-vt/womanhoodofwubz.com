@@ -31,7 +31,7 @@ export const Header = ({
         <div id="buttons">
           <DoubleElement>
             <a className="button" id="designed" tabIndex={0} onClick={scrollToGrid}>
-              Designed Hats <FontAwesomeIcon icon={faCircleArrowDown} />
+              Designed Hasts <FontAwesomeIcon icon={faCircleArrowDown} />
             </a>
           </DoubleElement>
           <DoubleElement>
