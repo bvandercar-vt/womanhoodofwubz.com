@@ -182,8 +182,8 @@ header {
   }
 
   .el-front {
-    color: lime !important;
-    /* -webkit-text-fill-color: lime; */
+    color: lime;
+    -webkit-text-fill-color: lime;
   }
 
   .el-back {
