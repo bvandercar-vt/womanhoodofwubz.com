@@ -190,6 +190,7 @@ header {
     --shadow-color-1: rgb(47, 0, 80);
     --shadow-size-2: 1em;
     --shadow-color-2: black;
+    opacity: 0;
     text-shadow:
       0 0 var(--shadow-size-1) var(--shadow-color-1),
       0 0 var(--shadow-size-1) var(--shadow-color-1),
