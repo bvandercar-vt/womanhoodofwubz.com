@@ -1,10 +1,10 @@
 {
-  "name": "womanhoodofwubz.github.io",
+  "name": "womanhoodofwubz.com",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "description": "Womanhood of Wubz",
-  "homepage": "https://WomanhoodOfWubz.github.io",
+  "homepage": "https://WomanhoodOfWubz.neocities.org/",
   "scripts": {
     "start": "yarn dev",
     "dev": "vite --open",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bvandercar-vt/womanhoodofwubz.github.io"
+    "url": "git+https://github.com/bvandercar-vt/womanhoodofwubz.com"
   },
   "keywords": [
     "bass",
@@ -27,7 +27,7 @@
   "author": "Blake Vandercar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bvandercar-vt/womanhoodofwubz.github.io/issues"
+    "url": "https://github.com/bvandercar-vt/womanhoodofwubz.com/issues"
   },
   "devDependencies": {
     "@types/lodash": "^4",
