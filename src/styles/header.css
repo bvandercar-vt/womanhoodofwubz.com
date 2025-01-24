@@ -84,6 +84,12 @@ header {
     justify-content: center;
     align-items: center;
   }
+}
+
+#social-links-wrapper {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   #connect {
     /* Position */
@@ -122,40 +128,34 @@ header {
         0 0 var(--shadow-size-2) var(--shadow-color-2);
     }
   }
-}
 
-#social-links-wrapper {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  #social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
 
-#social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
+    .circle {
+      /* Potition (Centered) */
+      --circle-size: 3em;
+      height: var(--circle-size);
+      width: var(--circle-size);
 
-  .circle {
-    /* Potition (Centered) */
-    --circle-size: 3em;
-    height: var(--circle-size);
-    width: var(--circle-size);
-
-    /* Appearance */
-    border: 5px solid black;
-    box-shadow: 0 0 30px black;
-    transition: 0.1s;
-
-    svg {
-      font-size: 2em;
-    }
-
-    &:hover {
-      box-shadow: 0 0 40px yellow;
+      /* Appearance */
+      border: 5px solid black;
+      box-shadow: 0 0 30px black;
+      transition: 0.1s;
 
       svg {
-        font-size: 2.2em;
+        font-size: 2em;
+      }
+
+      &:hover {
+        box-shadow: 0 0 40px yellow;
+
+        svg {
+          font-size: 2.2em;
+        }
       }
     }
   }
@@ -260,18 +260,20 @@ header {
     /* Appearance */
     text-align: center;
 
-    #connect {
-      /* Position */
-      position: absolute;
-      left: 50%;
-      max-width: 4em;
-      text-align: right;
-      margin: 0;
+    #social-links-wrapper {
+      #connect {
+        /* Position */
+        position: absolute;
+        left: 50%;
+        max-width: 4em;
+        text-align: right;
+        margin: 0;
 
-      /* Appearance */
-      color: Aquamarine;
-      font-style: italic;
-      transform: translateX(-10.1em) translateY(0.75em);
+        /* Appearance */
+        color: Aquamarine;
+        font-style: italic;
+        transform: translateX(-10.1em) translateY(0.75em);
+      }
     }
   }
 
