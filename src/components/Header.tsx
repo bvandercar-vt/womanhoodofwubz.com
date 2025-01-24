@@ -3,9 +3,10 @@ import {
   faArrowUpRightFromSquare,
   faCircleArrowDown,
   faEnvelope,
+  faLocationDot,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import type { HTMLAttributes } from 'react'
+import { type HTMLAttributes } from 'react'
 import { copyEmail, INSTAGRAM_USERNAME } from '../contants'
 import { CircleLink } from './CircleLink'
 import { DoubleElement } from './DoubleElement'
@@ -21,10 +22,13 @@ export const Header = ({
         <img src="/Logo.png" alt="Womanhood of Wubz" id="header-logo-img" />
         <div id="bio">
           <DoubleElement>
-            <p>📍 Denver, CO 📍</p>
+            <p id="location">
+              <FontAwesomeIcon icon={faLocationDot} size="sm" color="gold" />
+              Denver, CO
+            </p>
             <p>
-              ✨ Bringing you the accessories that celebrate the magic of good music and the power
-              of connection ✨
+              Bringing you the accessories that celebrate the magic of good music and the power of
+              connection
             </p>
           </DoubleElement>
         </div>
