@@ -53,7 +53,7 @@
     top: 0;
 
     /* Appearance */
-    font-size: 10cqw;
+    font-size: 11cqw;
 
     .number {
       &.el-front {
@@ -75,7 +75,7 @@
       /* Position */
       margin: 0.2em;
       float: right;
-      --size: 16cqw;
+      --size: 17cqw;
       width: var(--size);
       height: var(--size);
       position: relative;
@@ -111,7 +111,7 @@
     left: 0.3em;
 
     /* Appearance */
-    font-size: 9cqw;
+    font-size: 10cqw;
 
     &.caption {
       margin-left: 0.3em;

@@ -21,7 +21,7 @@ body {
   background-image: url('/public/background.png');
   background-position: center center;
   background-repeat: repeat;
-  background-size: 80em;
+  background-size: min(220vw, 80em);
   color: black;
   font-family: tahoma, sans-serif;
 }
