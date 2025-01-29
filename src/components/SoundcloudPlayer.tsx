@@ -12,11 +12,12 @@ export const SoundcloudPlayer = ({
   title: string
 }) => {
   const id = useId()
+  const titleId = useId()
   const iFrameElement = useRef(null)
 
   return (
     <div className="sc-player" role="group" aria-label="soundcloud player">
-      <a className="sc-title" href={href} target="_blank" title="SoundCloud playlist">
+      <a className="sc-title" href={href} target="_blank" title="SoundCloud playlist" id={titleId}>
         <p>
           <FontAwesomeIcon
             icon={faSoundcloud}
@@ -35,6 +36,7 @@ export const SoundcloudPlayer = ({
           src={src}
           id={id}
           ref={iFrameElement}
+          aria-labelledby={titleId}
         />
       </div>
     </div>

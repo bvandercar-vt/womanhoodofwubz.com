@@ -12,16 +12,18 @@
   /* Children */
   overflow: hidden;
 
-  &:hover {
-    --shadow-color: Fuchsia;
-    box-shadow:
-      0 0 5px black,
-      0 0 5px var(--shadow-color),
-      0 0 10px var(--shadow-color),
-      0 0 15px var(--shadow-color),
-      0 0 30px var(--shadow-color),
-      0 0 50px var(--shadow-color);
-    border-color: yellow;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      --shadow-color: indigo;
+      box-shadow:
+        0 0 5px black,
+        0 0 5px var(--shadow-color),
+        0 0 10px var(--shadow-color),
+        0 0 15px var(--shadow-color),
+        0 0 30px var(--shadow-color),
+        0 0 50px var(--shadow-color);
+      border-color: yellow;
+    }
   }
 }
 
@@ -71,11 +73,11 @@
     right: 0;
     top: 0;
 
-    button {
+    .button {
       /* Position */
       margin: 0.2em;
       float: right;
-      --size: 17cqw;
+      --size: 13cqw;
       width: var(--size);
       height: var(--size);
       position: relative;

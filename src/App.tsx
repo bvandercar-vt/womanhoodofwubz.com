@@ -78,13 +78,8 @@ export const App = () => {
               return (
                 <GridImage
                   src={url}
-                  title={
-                    <>
-                      {title}
-                      <br />
-                      {<span className="type">{type}</span>}
-                    </>
-                  }
+                  title={title}
+                  type={type}
                   subtitle={subtitle}
                   number={number}
                   price={price}

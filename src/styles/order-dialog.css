@@ -6,6 +6,26 @@
     text-align: center;
   }
 
+  .number {
+    color: grey;
+    margin-left: 0.4em;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  .title {
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+
+  .type {
+    font-size: 90%;
+  }
+
+  .modal-header {
+    align-items: start;
+  }
+
   img {
     border-radius: 1em;
     max-width: 100%;

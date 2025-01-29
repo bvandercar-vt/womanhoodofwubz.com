@@ -51,7 +51,7 @@ export const Header = ({
             title="Custom Designs"
             className="custom-dialog"
           >
-            Custom designs page in the works! For now, see our{' '}
+            Custom designs page is in the works! For now, see our{' '}
             <b>
               <a href="https://www.instagram.com/p/DDr601Wx6sF/?img_index=1">
                 Instagram post <FontAwesomeIcon icon={faExternalLink} size="xs" />

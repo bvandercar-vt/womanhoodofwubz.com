@@ -25,7 +25,9 @@ export const Dialog = ({
       {cloneElement(target, {
         onClick: () => setIsOpen(true),
         'aria-haspopup': 'dialog',
+        role: 'button',
         tabIndex: 0,
+        className: classNames('dialog-target', target.props.className),
       } satisfies React.HTMLAttributes<HTMLElement>)}
       <Modal
         isOpen={isOpen}
