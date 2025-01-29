@@ -12,18 +12,16 @@
   /* Children */
   overflow: hidden;
 
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      --shadow-color: indigo;
-      box-shadow:
-        0 0 5px black,
-        0 0 5px var(--shadow-color),
-        0 0 10px var(--shadow-color),
-        0 0 15px var(--shadow-color),
-        0 0 30px var(--shadow-color),
-        0 0 50px var(--shadow-color);
-      border-color: yellow;
-    }
+  &:hover {
+    --shadow-color: indigo;
+    box-shadow:
+      0 0 5px black,
+      0 0 5px var(--shadow-color),
+      0 0 10px var(--shadow-color),
+      0 0 15px var(--shadow-color),
+      0 0 30px var(--shadow-color),
+      0 0 50px var(--shadow-color);
+    border-color: yellow;
   }
 }
 
@@ -64,44 +62,6 @@
 
       &.el-back {
         text-shadow: var(--text-shadow);
-      }
-    }
-  }
-
-  .top-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    .button {
-      /* Position */
-      margin: 0.2em;
-      float: right;
-      --size: 13cqw;
-      width: var(--size);
-      height: var(--size);
-      position: relative;
-
-      /* Appearance */
-      background-color: gold;
-      border-color: indigo;
-      cursor: pointer;
-
-      svg {
-        color: rgb(47, 0, 80);
-        position: absolute;
-        --size: 90%;
-        width: var(--size);
-        height: var(--size);
-        left: 5%;
-        top: 5%;
-      }
-
-      &:hover {
-        border-color: yellow;
-        box-shadow:
-          0 0 10px yellow,
-          0 0 40px yellow;
       }
     }
   }

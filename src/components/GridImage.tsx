@@ -1,5 +1,5 @@
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { ReactNode } from 'react'
 import { useId } from 'react'
@@ -41,11 +41,6 @@ export const GridImage = ({
           <img src={src} aria-labelledby={titleId} />
           <div className="top-left">
             <DoubleElement className="number">#{number}</DoubleElement>
-          </div>
-          <div className="top-right">
-            <div className="button">
-              <FontAwesomeIcon icon={faShoppingBasket} />
-            </div>
           </div>
           <div className="bottom-left caption">
             <DoubleElement>
