@@ -28,10 +28,10 @@ header {
     color: lime !important;
     border-radius: 1em;
     padding: 0.2em 0.5em;
-    background-color: purple;
+    background-color: indigo;
 
     &:hover {
-      background-color: indigo;
+      background-color: purple;
     }
   }
 }
