@@ -1,6 +1,14 @@
 .grid {
+  --gap: 1.5em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 40%), 1fr));
-  gap: 20px;
+  gap: var(--gap);
   justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    --gap: 0.5em;
+    margin: 0 var(--gap);
+  }
 }
