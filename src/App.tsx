@@ -4,12 +4,12 @@ import './styles/index.css'
 import './api/soundcloudWidget'
 
 import * as contentful from 'contentful'
-import { isString } from 'lodash'
+import { isString } from 'es-toolkit'
 import { useEffect, useState } from 'react'
 import Modal from 'react-modal'
-import { Grid } from './components/Grid'
 import { GridImage } from './components/GridImage'
 import { Header } from './components/Header'
+import { Grid } from './components/primitives/Grid'
 import { SoundcloudPlayer } from './components/SoundcloudPlayer'
 
 type Product = contentful.EntrySkeletonType<{
@@ -40,7 +40,9 @@ export const App = () => {
     accessToken: CONTENTFUL_ACCESS_TOKEN,
   })
 
-  type ContentfulResponse = Awaited<ReturnType<typeof contentfulClient.getEntries<Product>>>
+  type ContentfulResponse = Awaited<
+    ReturnType<typeof contentfulClient.getEntries<Product>>
+  >
 
   useEffect(() => {
     contentfulClient
@@ -48,17 +50,19 @@ export const App = () => {
         content_type: 'product',
         order: ['-fields.number'],
       })
-      .then((data) => {
-        setData(data)
+      .then((d) => {
+        setData(d)
       })
       .catch((error) => alert(error))
-  }, [])
+  }, [contentfulClient])
 
   return (
     <>
       <Header
         scrollToGrid={() =>
-          document.getElementById(GRID_ID)?.scrollIntoView({ behavior: 'smooth' })
+          document
+            .getElementById(GRID_ID)
+            ?.scrollIntoView({ behavior: 'smooth' })
         }
       />
       <div id="main-body">
@@ -68,25 +72,26 @@ export const App = () => {
           title="Womanhood Of Wubz - Volume 3"
         />
         <Grid id={GRID_ID}>
-          {data &&
-            data.items.map((item) => {
-              const { image, title, subtitle, number, type, price, soldOut } = item.fields
+          {data?.items.map((item) => {
+            const { image, title, subtitle, number, type, price, soldOut } =
+              item.fields
 
-              const url = (image as contentful.Asset)?.fields?.file?.url
-              if (!url || !isString(url)) return null
+            const url = (image as contentful.Asset)?.fields?.file?.url
+            if (!url || !isString(url)) return null
 
-              return (
-                <GridImage
-                  src={url}
-                  title={title}
-                  type={type}
-                  subtitle={subtitle}
-                  number={number}
-                  price={price}
-                  soldOut={soldOut}
-                />
-              )
-            })}
+            return (
+              <GridImage
+                key={`grid-image-${number}-title-${title}`}
+                src={url}
+                title={title}
+                type={type}
+                subtitle={subtitle}
+                number={number}
+                price={price}
+                soldOut={soldOut}
+              />
+            )
+          })}
         </Grid>
       </div>
     </>

@@ -27,16 +27,16 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: yarn install --frozen-lockfile
 
       - name: Linting
-        run: npm run lint
+        run: yarn lint
 
       - name: Build project
         env:
           CONTENTFUL_SPACE: ${{ secrets.CONTENTFUL_SPACE }}
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-        run: npm run build
+        run: yarn build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4

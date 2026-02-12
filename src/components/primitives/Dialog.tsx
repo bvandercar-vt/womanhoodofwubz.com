@@ -29,6 +29,7 @@ export const Dialog = ({
         tabIndex: 0,
         className: classNames('dialog-target', target.props.className),
       } satisfies React.HTMLAttributes<HTMLElement>)}
+      {/* @ts-expect-error - react-modal's class type is incompatible with React 18's Component (refs) */}
       <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
@@ -42,6 +43,7 @@ export const Dialog = ({
           <h3 id={titleId}>{title}</h3>
           <button
             aria-label="close dialog"
+            type="button"
             aria-controls={dialogId}
             onClick={() => setIsOpen(false)}
             className="close-btn"

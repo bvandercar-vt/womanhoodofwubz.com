@@ -4,16 +4,19 @@ import classNames from 'classnames'
 
 export const CircleLink = ({
   icon,
+  className,
   ...props
-}: React.AnchorHTMLAttributes<HTMLAnchorElement> & Pick<FontAwesomeIconProps, 'icon'>) => (
+}: React.AnchorHTMLAttributes<HTMLAnchorElement> &
+  Pick<FontAwesomeIconProps, 'icon'>) => (
   <a
     target="_blank"
     tabIndex={0}
-    role="link"
     {...props}
-    className={classNames('circle', props['className'])}
-    aria-label={props['aria-label'] ?? props['title']}
+    className={classNames('circle', className)}
   >
-    <FontAwesomeIcon icon={icon} />
+    <FontAwesomeIcon
+      icon={icon}
+      aria-label={props['aria-label'] ?? props.title}
+    />
   </a>
 )

@@ -1,10 +1,10 @@
-@import 'double-element.css';
-@import 'header.css';
-@import 'grid.css';
-@import 'grid-image.css';
-@import 'modal.css';
-@import 'order-dialog.css';
-@import 'sc-player.css';
+@import "double-element.css";
+@import "header.css";
+@import "grid.css";
+@import "grid-image.css";
+@import "modal.css";
+@import "order-dialog.css";
+@import "sc-player.css";
 
 /* General */
 
@@ -18,7 +18,7 @@
 }
 
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   left: 0;
   right: 0;
@@ -26,7 +26,7 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-image: url('/public/background.jpg');
+  background-image: url("/public/background.jpg");
   background-position: center center;
   background-repeat: repeat;
   background-size: min(200vw, 80em);
@@ -71,6 +71,9 @@ h5 {
 
 button,
 .button {
+  appearance: none;
+  font: inherit;
+  color: inherit;
   border-radius: 0.5em;
   border-width: 2px;
   border-style: solid;
@@ -79,7 +82,7 @@ button,
 
 button,
 .button,
-[role='button'] {
+[role="button"] {
   &:not(a) {
     cursor: pointer;
   }

@@ -34,11 +34,20 @@
 
   --shadow-color: indigo;
   --shadow-color-2: purple;
-  --text-shadow: 0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color),
-    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color),
-    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color),
-    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color),
-    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 12px var(--shadow-color-2),
+  --text-shadow:
+    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color),
+    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(
+      --shadow-color
+    ),
+    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(
+      --shadow-color
+    ),
+    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 8px var(
+      --shadow-color
+    ),
+    0 0 8px var(--shadow-color), 0 0 8px var(--shadow-color), 0 0 12px var(
+      --shadow-color-2
+    ),
     0 0 12px var(--shadow-color-2), 0 0 12px var(--shadow-color-2);
 
   img {

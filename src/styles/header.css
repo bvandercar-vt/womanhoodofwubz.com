@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/complexity/noImportantStyles: will change to tailwind eventually */
 header {
   position: relative;
   display: block;
@@ -12,7 +13,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   max-height: 180px;
-  max-width: calc(100% - 20px); /* otherwise, extends past viewport when narrow (mobile) */
+  max-width: calc(
+    100% -
+    20px
+  ); /* otherwise, extends past viewport when narrow (mobile) */
   padding-top: 5px;
   margin-bottom: -8px;
 
@@ -48,6 +52,11 @@ header {
   text-align: center;
   gap: 10px;
   padding-top: 0.1em;
+
+  button {
+    background: none;
+    border: none;
+  }
 
   .button {
     width: 8em;
@@ -219,7 +228,7 @@ header {
   margin-bottom: 0.5em;
 
   /* Appearance */
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1.2em;
   text-wrap: balance;
 
@@ -245,7 +254,9 @@ header {
 
   #location {
     font-size: 1em;
-    transform: translateX(-0.25em); /* Ignore icon when centering, looks better*/
+    transform: translateX(
+      -0.25em
+    ); /* Ignore icon when centering, looks better*/
   }
 
   .el-front {

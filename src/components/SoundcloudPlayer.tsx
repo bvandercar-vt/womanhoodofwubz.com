@@ -16,18 +16,30 @@ export const SoundcloudPlayer = ({
   const iFrameElement = useRef(null)
 
   return (
+    // biome-ignore lint/a11y/useSemanticElements: group is fine here
     <div className="sc-player" role="group" aria-label="soundcloud player">
-      <a className="sc-title" href={href} target="_blank" title="SoundCloud playlist" id={titleId}>
+      <a
+        className="sc-title"
+        href={href}
+        target="_blank"
+        title="SoundCloud playlist"
+        id={titleId}
+      >
         <p>
           <FontAwesomeIcon
             icon={faSoundcloud}
-            style={{ paddingRight: '0.2em', verticalAlign: 'middle', paddingBottom: '1px' }}
+            style={{
+              paddingRight: '0.2em',
+              verticalAlign: 'middle',
+              paddingBottom: '1px',
+            }}
           />
           {title}
         </p>
       </a>
       <div className="sc-iframe-wrapper">
         <iframe
+          title="SoundCloud Player"
           width="100%"
           height="350"
           scrolling="no"
